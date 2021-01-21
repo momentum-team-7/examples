@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+.header {
+  background-color: aliceblue;
+}
+
+.header a {
+  color: magenta;
+}
+
+h1:hover {
+  color: yellow;
+}
+
+img {
+  border-color: magenta;
+  border-width: 4px;
+  border-style: solid;
+  padding: 4px;
+  width: 50%;
+}
