@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: ;
+  height: 100vh;
+}
+
+.box, .container {
+  background-color: red;
+}
