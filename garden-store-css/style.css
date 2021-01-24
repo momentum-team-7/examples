@@ -25,3 +25,16 @@ img {
   padding: 4px;
   width: 50%;
 }
+
+.plant-photo {
+  width: 200px;
+}
+
+.plant-traits {
+  list-style-type: none;
+}
+
+.plant-traits li {
+  background-color: skyblue;
+
+}
