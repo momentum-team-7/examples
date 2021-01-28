@@ -1,0 +1,38 @@
+.calculator {
+  width: 400px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 80px;
+}
+
+.button,
+.display {
+  padding: 8px;
+  font-size: 48px;
+  font-family: sans-serif;
+  background-color: #947eb0;
+  border: 2px solid #ffffff;
+  color: white;
+}
+
+.button {
+  text-align: center;
+}
+
+.display {
+  text-align: right;
+}
+
+.operator {
+  background-color: #a3a5c3;
+}
+
+.button:hover {
+  background-color: #766c7f;
+}
+
+#display {
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
