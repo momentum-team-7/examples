@@ -1,6 +1,6 @@
 let newVariable = ''
 
-const form = document.querySelector('#parking-form')
+let form = document.querySelector('#parking-form')
 let formIsValid
 
 /* https://developer.mozilla.org/en-US/docs/Web/API/Constraint_validation#validity
@@ -15,7 +15,7 @@ form.addEventListener('input', event => {
 
 form.addEventListener('submit', event => {
   event.preventDefault()
-  formIsValid = true
+  formIsValid = false
 
   validateStartDate()
   validateCreditCard()
