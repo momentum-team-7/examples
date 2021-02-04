@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="currencies.js"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body class="ma5 sans-serif">
+  <h1 class="f1 lh-title">💸 Currency Converter 💸</h1>
+  <section class="currency-converter">
+    <div class="convert-from mv3">
+      Convert From
+      <select id="currency-from">
+        <option value="">--Select a base currency--</option>
+      </select>
+    </div>
+    <div class="convert-to mv3">
+      Convert To
+      <select id="currency-to">
+        <option value="">--Select a target currency--</option>
+      </select>
+    </div>
+    <div class="currency-values">
+      <div class="currency-amount">
+        <label for="currency-amount" class="f6 b db mb2">
+          Currency Amount
+        </label>
+        <input type="number" id="currency-amount" class="input-reset ba b--black-20 pa2 mb2 db w-50" />
+      </div>
+    </div>
+    <button id="convert" class="f6 link dim br3 ph3 pv2 mb2 dib white bg-navy">
+      Convert
+    </button>
+    <div id="currency-result" class="mv5 f5 b black pa4"></div>
+  </section>
+</body>
+
+</html>
