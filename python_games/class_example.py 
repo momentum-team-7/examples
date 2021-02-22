@@ -1,0 +1,18 @@
+class Pet:
+    def __init__(self, name, species):
+        self.name = name
+        self.species = species
+
+    def __str__(self):
+        return f'{self.name} the {self.species}'
+
+    # given a list of tuples, create a list of pets with a method
+    def create_menagerie():
+        our_pets = [('Boris', 'hamster'), ('Nutmeg', 'bear-dog'), ('Meeko', 'cat'), ('Nala', 'cat')]
+        # create instances of the class Pet for each tuple in the above list
+        class_pets = [Pet(name, species) for name, species in our_pets]
+        for pet in class_pets:
+            print(type(pet), pet)
+
+
+# Pet.create_menagerie()

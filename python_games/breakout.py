@@ -223,7 +223,7 @@ exit_program = False
 while not exit_program:
  
     # Limit to 30 fps
-    clock.tick(30)
+    clock.tick(20)
  
     # Clear the screen
     screen.fill(black)
