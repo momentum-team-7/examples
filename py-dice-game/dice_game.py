@@ -25,8 +25,8 @@ def play_game():
         # add the points scored by the winner of the round to their score
         scores[winner] += points
    #end game and print the final scores 
-    print(f"final scores: {scores}")
-  
+    for name, score in sorted(scores.items(), key=lambda item: item[1]):
+        print(f"{name} has {score} points.")
     
 # since we want to repeat this action, we'll make it
 # a spearate function
