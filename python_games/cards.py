@@ -60,6 +60,7 @@ class Game:
         self.player2 = Player(name2)
         self.winner = None
         self.deal_hands()
+   
 
     # DONE use deal_card() method from Deck class to deal 7 cards to each player
     def deal_hands(self):
@@ -87,6 +88,7 @@ class Game:
             receiver.hand = [card for card in receiver.hand if card.rank != selected_card_rank]
             # TODO have player put down "books" of 4 cards
             print(f'{requester} | {receiver}')
+            # recursion
             self.turn(requester, receiver)
     
         else:
@@ -96,6 +98,7 @@ class Game:
             requester.hand.append(drawn_card)
             if drawn_card.rank == selected_card_rank:
                  # TODO have player put down "books" of 4 cards
+                # recursion
                 self.turn(requester, receiver)
             else: 
                 print(f'{requester} | {receiver}')
