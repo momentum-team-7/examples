@@ -1,0 +1,6 @@
+1. clear out Pipfiles and settings.json in parent directories
+2. Pipenv install
+3. Pipenv shell
+4. Get python path using `which python`
+5. Hard code that as pythonpath in settings.json
+6. 
