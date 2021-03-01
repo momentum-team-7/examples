@@ -1,3 +1,15 @@
+# Project
+We will be re-creating your iTunes app, using Django this time.
+The big difference is that you will be storing the data about songs,
+albums, and artists *in your database* rather than pulling them from
+the Spotify API. 
+
+## Monday Morning & Break
+- Start the Project
+- Create the Album model
+- Add some test albums to the database via the admin
+- Write URL/view/template to render all the albums
+
 # Django Project Template
 
 This project was generated from the Momentum Django project template. This template sets up some minimal changes:
@@ -24,3 +36,5 @@ cp project/.env.sample project/.env
 ```
 
 If you want to use another directory for your project directory, replace `project` above with the name of your directory.
+
+

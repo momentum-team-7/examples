@@ -9,4 +9,7 @@ class User(AbstractUser):
 class Album(models.Model):
     title = models.CharField(max_length=280)
     artist = models.CharField(max_length=280)
-    release_date = models.DateField()
+    release_year = models.IntegerField(blank=True, null=True)
+
+    def __str__(self):
+        return self.title
