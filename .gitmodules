@@ -1,0 +1,3 @@
+[submodule "django-music-collab-rlconley"]
+	path = django-music-collab-rlconley
+	url = https://github.com/momentum-team-7/django-music-collab-rlconley
